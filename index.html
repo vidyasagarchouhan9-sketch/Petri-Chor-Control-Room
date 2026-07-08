@@ -4,169 +4,118 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Petri-Chor Control Room</title>
+<title>🚂 Petri-Chor Control Room</title>
 
 <style>
 
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
-background:linear-gradient(180deg,#01040f,#061628,#000);
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-overflow:hidden;
+    background:linear-gradient(180deg,#020817,#061b2f,#000);
+    color:white;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
 }
 
 .container{
-
-width:92%;
-max-width:650px;
-
-background:rgba(8,18,35,.92);
-
-border:2px solid cyan;
-
-border-radius:20px;
-
-padding:35px;
-
-box-shadow:0 0 35px cyan;
-
-text-align:center;
-
+    width:100%;
+    max-width:520px;
+    background:rgba(8,15,30,.92);
+    border:2px solid #00eaff;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 0 18px rgba(0,234,255,.5);
 }
 
 h1{
-
-font-size:38px;
-
-color:#00ffff;
-
-text-shadow:0 0 20px cyan;
-
-margin-bottom:15px;
-
+    font-size:clamp(28px,5vw,40px);
+    color:#00eaff;
+    text-shadow:0 0 15px cyan;
+    margin-bottom:15px;
 }
 
 .status{
-
-display:inline-block;
-
-background:#053;
-
-padding:8px 18px;
-
-border-radius:30px;
-
-color:#00ff88;
-
-font-weight:bold;
-
-margin-bottom:25px;
-
+    display:inline-block;
+    padding:8px 18px;
+    background:#063;
+    color:#00ff99;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
 }
 
 .line{
-
-height:2px;
-
-background:cyan;
-
-margin:25px 0;
-
+    width:100%;
+    height:2px;
+    background:cyan;
+    margin:20px 0;
 }
 
 .info{
-
-line-height:1.8;
-
-font-size:18px;
-
-color:#ddd;
-
+    font-size:clamp(15px,2.5vw,18px);
+    line-height:1.7;
+    color:#ddd;
 }
 
 .button{
-
-display:block;
-
-width:100%;
-
-margin-top:20px;
-
-padding:18px;
-
-border-radius:50px;
-
-font-size:20px;
-
-font-weight:bold;
-
-text-decoration:none;
-
-transition:.3s;
-
+    display:block;
+    width:100%;
+    padding:15px;
+    margin-top:18px;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:clamp(16px,2vw,20px);
+    font-weight:bold;
+    transition:.3s;
 }
 
 .enter{
-
-background:cyan;
-
-color:black;
-
+    background:#00eaff;
+    color:black;
 }
 
 .enter:hover{
-
-transform:scale(1.05);
-
-box-shadow:0 0 25px cyan;
-
+    transform:scale(1.03);
+    box-shadow:0 0 20px cyan;
 }
 
 .back{
-
-background:transparent;
-
-border:2px solid cyan;
-
-color:cyan;
-
+    background:transparent;
+    color:#00eaff;
+    border:2px solid #00eaff;
 }
 
 .back:hover{
-
-background:cyan;
-
-color:black;
-
-}
-
-.footer{
-
-margin-top:30px;
-
-font-size:14px;
-
-color:#888;
-
+    background:#00eaff;
+    color:black;
 }
 
 .warning{
+    margin-top:20px;
+    color:#ffd54f;
+    font-size:14px;
+}
 
-margin-top:15px;
+.footer{
+    margin-top:25px;
+    color:#888;
+    font-size:13px;
+}
 
-color:#ffcc00;
+@media(max-width:600px){
 
-font-size:15px;
+.container{
+    padding:20px;
+}
 
 }
 
@@ -178,7 +127,7 @@ font-size:15px;
 
 <div class="container">
 
-<h1>🚂 PETRI-CHOR CONTROL ROOM</h1>
+<h1>🚂 PETRI-CHOR<br>CONTROL ROOM</h1>
 
 <div class="status">
 🟢 SYSTEM ONLINE
@@ -188,23 +137,15 @@ font-size:15px;
 
 <div class="info">
 
-📻 Secure communication terminal established.
+📻 Welcome to the official communication terminal.
 
 <br><br>
 
-Need help?
-
-<br>
-
-Report a bug?
-
-<br>
-
-Share your ideas?
-
-<br>
-
-Or just say hello!
+Need help?<br>
+🐞 Report a bug<br>
+💡 Suggest a feature<br>
+🧩 Share a theory<br>
+👋 Or simply say hello!
 
 <br><br>
 
@@ -213,32 +154,21 @@ Transmit your message directly to the developer.
 </div>
 
 <a class="button enter" href="chat.html">
-
 📡 ENTER CONTROL ROOM
-
 </a>
 
 <a class="button back"
 href="https://vidyasagarchouhan9-sketch.github.io/Petri-chor_world/">
-
 🚂 RETURN TO PETRI-CHOR WORLD
-
 </a>
 
-<p class="warning">
-
+<div class="warning">
 ⚠ Unauthorized access to railway systems is prohibited.
-
-</p>
+</div>
 
 <div class="footer">
-
-Petri-Chor Control Room • Version 1.0
-
-<br>
-
+Petri-Chor Control Room v1.0<br>
 © 2026 Vidyasagar
-
 </div>
 
 </div>
